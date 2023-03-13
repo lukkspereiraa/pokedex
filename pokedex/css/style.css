@@ -1,0 +1,87 @@
+:root{
+    --cor-degrader: #6ab7f5,#fff;
+    --fonte-padrao: 'Press Start 2P', cursive;
+    --cor-numero: #aaa;
+    --cor-nome: #3a444d;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor-degrader));
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+main{
+    font-family: var(--fonte-padrao);
+    display: inline-block;
+    margin: 2%;
+    padding: 2%;
+    position: relative;
+}
+.pokedex{
+  width: 100%;
+  
+}
+.imagem__pokemon{
+    position: absolute;
+    width: 20%;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%,20%);
+}
+.pokemor__dado{
+    position: absolute;
+    font-weight: 600;
+    color: var(--cor-numero);
+    font-size: clamp(10px, 5vw, 25px);
+    top: 54.5%;
+    right: 38%;
+}
+.pokemor__nome{
+    color:var(--cor-nome);
+    
+}
+
+.formulario{
+    position: absolute;
+    width: 65%;
+    top:65%;
+    left: 13.5%;
+}
+.inpute__de__pesquisa{
+    width: 80%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid var(--cor-nome);
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--cor-nome);
+    font-size:clamp(10px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 var(--cor-numero), -5px 7px 0 var(--cor-nome);
+}
+.botoes{
+   position: absolute;
+   bottom: 15%;
+   left: 50%;
+   width: 65%;
+   transform: translate(-57%,0);
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+.botao{
+    width: 40%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 2px ;
+    font-size: clamp(10px, 5vw, 1rem);
+    font-weight: 600;
+    color: var(--cor-numero);
+    background-color: var(--cor-nome);
+    box-shadow: -3px 2px 0 var(--cor-numero);
+}
+.botao:active{
+    box-shadow: inset -3px 3px 0 var(--cor-numero);
+    font-size: 0.9rem;
+}
